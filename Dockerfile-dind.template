@@ -1,4 +1,4 @@
-FROM docker:%%VERSION%%
+FROM taobeier/docker:%%VERSION%%
 
 # https://github.com/docker/docker/blob/master/project/PACKAGERS.md#runtime-dependencies
 RUN set -eux; \

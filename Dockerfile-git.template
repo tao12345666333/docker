@@ -1,4 +1,4 @@
-FROM docker:%%VERSION%%
+FROM taobeier/docker:%%VERSION%%
 
 RUN apk add --no-cache \
 		git \

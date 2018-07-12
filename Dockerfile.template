@@ -1,4 +1,4 @@
-FROM alpine:%%TAG%%
+FROM taobeier/alpine:%%TAG%%
 
 RUN apk add --no-cache \
 		ca-certificates

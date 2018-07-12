@@ -2,8 +2,6 @@ language: bash
 services: docker
 
 env:
-  - VERSION=18.06-rc
-  - VERSION=18.05
   - VERSION=18.03
 
 install:
@@ -12,7 +10,7 @@ install:
 before_script:
   - env | sort
   - cd "$VERSION"
-  - image="docker:$VERSION"
+  - image="taobeier/docker:$VERSION"
 
 script:
   - travis_retry docker build -t "$image" .
